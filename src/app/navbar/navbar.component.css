@@ -1,0 +1,30 @@
+/* navbar.component.css */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fcfafa;
+    color: white;
+  }
+  
+  .logo img {
+    height: 200px; /* Adjust the height as needed */
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 150px;
+  }
+  
+  li {
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: black;
+    margin-right: 60px;
+  }
+  

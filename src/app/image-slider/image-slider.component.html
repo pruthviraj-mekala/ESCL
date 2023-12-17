@@ -1,0 +1,7 @@
+<!-- image-slider.component.html -->
+<div class="slider">
+    <div *ngFor="let image of images; let i = index" [@fade]="i === currentSlide ? 'visible' : 'hidden'">
+      <img [src]="image" alt="Slide {{ i + 1 }}">
+    </div>
+  </div>
+  
