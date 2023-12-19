@@ -3,13 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-image-carousel',
   templateUrl: './image-carousel.component.html',
-  styleUrl: './image-carousel.component.css'
+  styleUrl: './image-carousel.component.less'
 })
 export class ImageCarouselComponent {
 
   slides?: any[];
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     this.slides = [{
@@ -22,13 +22,13 @@ export class ImageCarouselComponent {
       src: 'assets/gallery/pic2.jpg',
       title: '',
       subtitle: ''
-    },{
+    }, {
       id: 0,
       src: 'assets/gallery/pic3.jpg',
       title: '',
       subtitle: ''
     }];
-  
+
   }
 
   onItemChange($event: any): void {

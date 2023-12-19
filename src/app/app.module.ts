@@ -11,10 +11,13 @@ import { NewsBulletinComponent } from './news-bulletin/news-bulletin.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel/image-carousel.component';
 import { AlertModule, CarouselModule } from '@coreui/angular';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatCardModule} from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { NewsBulletinCarouselComponent } from './news-bulletin-carousel/news-bulletin-carousel/news-bulletin-carousel.component';
+import { RecentUpdatesCardComponent } from './recent-updates-card/recent-updates-card/recent-updates-card.component';
 
 
 @NgModule({
@@ -25,20 +28,23 @@ import {MatCardModule} from '@angular/material/card';
     ImageSliderComponent,
     NewsBulletinComponent,
     ImageCarouselComponent,
+    NewsBulletinCarouselComponent,
+    RecentUpdatesCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-   AlertModule,
-   CarouselModule,
-   BrowserAnimationsModule,
-   MatToolbarModule, 
-   MatButtonModule, 
-   MatIconModule,
-   MatCardModule
+    AlertModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCardModule,
+    MatListModule
   ],
-  providers: [ provideAnimations() ],
+  providers: [provideAnimations()],
   bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

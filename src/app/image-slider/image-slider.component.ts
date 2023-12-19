@@ -5,7 +5,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 @Component({
   selector: 'app-image-slider',
   templateUrl: './image-slider.component.html',
-  styleUrls: ['./image-slider.component.css'],
+  styleUrls: ['./image-slider.component.less'],
   animations: [
     trigger('fade', [
       state('visible', style({ opacity: 1 })),
