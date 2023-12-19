@@ -1,4 +1,8 @@
-/* news-bulletin.component.css */
+
+:host {
+  display: flex;
+  justify-content: space-around!important;
+}
 
 .news-bulletin {
      border: 1px solid #ccc;

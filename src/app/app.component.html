@@ -1,9 +1,28 @@
 
+<div class="header-content">
+    <app-navbar></app-navbar>
+</div>
+<div class="main-content container">
+    <mat-card class="row">
+        <mat-card-header>
+            <mat-card-title>Recent Updates</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+            </p>
+          </mat-card-content>
+    </mat-card>
+    <app-news-bulletin class="row" [news]="['News Item 1', 'News Item 2', 'News Item 3','News Item 4']"></app-news-bulletin>
+    <app-image-carousel class="row"></app-image-carousel>
 
-<app-navbar></app-navbar>
-<!-- app.component.html or any other component where you want to use the news bulletin -->
+    <!-- app.component.html or any other component where you want to use the news bulletin -->
+<!--<app-image-slider></app-image-slider>-->    
+</div>
+<div class="footer-content">
+    <app-footer></app-footer>
+</div>
 
-<app-news-bulletin [news]="['News Item 1', 'News Item 2', 'News Item 3','News Item 4']"></app-news-bulletin>
-
-<app-footer></app-footer>
 <router-outlet></router-outlet>
