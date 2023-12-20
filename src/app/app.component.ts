@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import 'bootstrap/dist/css/bootstrap.min.less'
-
 
 @Component({
   selector: 'app-root',

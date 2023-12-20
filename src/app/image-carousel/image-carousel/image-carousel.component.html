@@ -1,12 +1,8 @@
+<div>Gallery</div>
 <c-carousel (itemChange)="onItemChange($event)" [interval]="3000" transition="slide">
-    <c-carousel-inner>
-      <c-carousel-item *ngFor="let slide of slides">
-        <img
-          [src]="slide.src"
-          alt="{{slide.title}}"
-          class="d-block w-50"
-          loading="lazy"
-        />
-      </c-carousel-item>
-    </c-carousel-inner>
-  </c-carousel>
+  <c-carousel-inner>
+    <c-carousel-item *ngFor="let slide of slides">
+      <img [src]="slide.src" alt="{{slide.title}}" class="d-block" loading="lazy" />
+    </c-carousel-item>
+  </c-carousel-inner>
+</c-carousel>
