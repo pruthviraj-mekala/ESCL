@@ -11,6 +11,7 @@ export class NewsBulletinComponent {
     'Captains-Meeting on April-01-2024',
     'Tape ball T-8 Roster  comming soon',
     'Tennis ball T-10 Roster  comming soon',
+    'Aubrey Day is the Editorial Director at Future  politics for all of Britain',
     'More to come...',
   ];
 }

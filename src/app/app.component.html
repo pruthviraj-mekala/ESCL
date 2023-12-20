@@ -2,13 +2,13 @@
   <app-navbar></app-navbar>
 </div>
 <div class="main-content container">
-  <div class="updates-sponsers-row multi-col-row col-3-row row">
-    <app-recent-updates-card class="m-col-3"></app-recent-updates-card>
+  <div class="updates-sponsers-row multi-col-row col-3-row row ">
+    <app-recent-updates-card class="m-col-3 alert alert-primary "></app-recent-updates-card>
     <app-sponsers-carousel class="m-col-1"></app-sponsers-carousel>
   </div>
-
+  
   <div class="news-bulletin-row multi-col-row col-3-row row">
-    <app-news-bulletin class="card m-col-3"
+      <app-news-bulletin class="card m-col-3 alert alert-success"
       [news]="['News Item 1', 'News Item 2', 'News Item 3','News Item 4']"></app-news-bulletin>
     <app-news-bulletin-carousel class="m-col-1"></app-news-bulletin-carousel>
   </div>
