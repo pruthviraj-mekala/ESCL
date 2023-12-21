@@ -19,6 +19,10 @@ import { MatCardModule } from '@angular/material/card';
 import { NewsBulletinCarouselComponent } from './news-bulletin-carousel/news-bulletin-carousel/news-bulletin-carousel.component';
 import { RecentUpdatesCardComponent } from './recent-updates-card/recent-updates-card/recent-updates-card.component';
 import { SponsersCarouselComponent } from './sponsers-carousel/sponsers-carousel/sponsers-carousel.component';
+import { HomeComponentComponent } from './home-component/home-component.component';
+import { HomeComponent } from './home/home.component';
+import { CrickClubComponent } from './crick-club/crick-club.component';
+import { UsaCricketComponent } from './usa-cricket/usa-cricket.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,10 @@ import { SponsersCarouselComponent } from './sponsers-carousel/sponsers-carousel
     NewsBulletinCarouselComponent,
     RecentUpdatesCardComponent,
     SponsersCarouselComponent,
+    HomeComponentComponent,
+    HomeComponent,
+    CrickClubComponent,
+    UsaCricketComponent,
   ],
   imports: [
     BrowserModule,

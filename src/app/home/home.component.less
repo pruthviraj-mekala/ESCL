@@ -1,0 +1,34 @@
+.row {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.multi-col-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    &.col-2-row>* {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    &.col-3-row {
+        &>* {
+            min-width: 250px;
+        }
+
+        .m-col-3 {
+            flex: 3;
+        }
+
+        .m-col-1 {
+            flex: 1;
+        }
+    }
+}
+
+.updates-sponsers-row {}
+
+.news-bulletin-row {}
