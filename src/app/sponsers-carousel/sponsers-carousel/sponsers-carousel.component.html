@@ -1,4 +1,8 @@
-<div class="header">Our sponsers</div>
+<mat-card>
+<mat-card-header  >
+    <mat-card-title class="text-center">Our sponsers</mat-card-title>
+</mat-card-header>
+<mat-card-content >
 <c-carousel (itemChange)="onItemChange($event)" [interval]="10000" [animate]="false" transition="crossfade">
     <c-carousel-inner>
         <c-carousel-item *ngFor="let slide of slides">
@@ -6,3 +10,5 @@
         </c-carousel-item>
     </c-carousel-inner>
 </c-carousel>
+</mat-card-content>
+</mat-card>

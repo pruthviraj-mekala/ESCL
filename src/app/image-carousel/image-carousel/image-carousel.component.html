@@ -1,8 +1,14 @@
-<div>Gallery</div>
-<c-carousel (itemChange)="onItemChange($event)" [interval]="3000" transition="slide">
-  <c-carousel-inner>
-    <c-carousel-item *ngFor="let slide of slides">
-      <img [src]="slide.src" alt="{{slide.title}}" class="d-block" loading="lazy" />
-    </c-carousel-item>
-  </c-carousel-inner>
-</c-carousel>
+<mat-card>
+<mat-card-header  >
+    <mat-card-title class="text-center">Gallery</mat-card-title>
+</mat-card-header>
+<mat-card-content >
+  <c-carousel (itemChange)="onItemChange($event)" [interval]="3000" transition="slide">
+    <c-carousel-inner>
+      <c-carousel-item *ngFor="let slide of slides">
+        <img [src]="slide.src" alt="{{slide.title}}" class="d-block" loading="lazy" />
+      </c-carousel-item>
+    </c-carousel-inner>
+  </c-carousel>
+</mat-card-content>
+</mat-card>
